@@ -1,21 +1,82 @@
-# Byte-compiled / optimized / DLL files
+# ==========================================
+#  PYTHON & DATAANALYS PROJEKT (.gitignore)
+#  För användning i Pythonkurs + GitHubkurs
+# ==========================================
+
+# 🐍 Python-kompilerade filer (bytecode)
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
+# 📦 Virtuella miljöer
 venv/
 env/
+.venv/
+ENV/
 
-# IDE / editors
+# 🧩 Jupyter Notebooks och temporära filer
+.ipynb_checkpoints/
+*.ipynb_convert/
+*.nbconvert.ipynb
+
+# 📊 Datafiler (stora dataset som inte ska pushas)
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.h5
+*.sqlite3
+*.db
+data/raw/
+data/temp/
+
+# 🧠 Maskininlärningsmodeller / binära filer
+*.pkl
+*.joblib
+*.hdf5
+*.model
+
+# 🧰 IDE- och editorfiler
 .vscode/
 .idea/
+*.sublime-project
 *.sublime-workspace
+*.code-workspace
 
-# System files
-.DS_Store
-Thumbs.db
-
-# Logs and temporary files
+# 💾 Loggar och cache
 *.log
 *.tmp
+*.bak
+*.swp
+*.lock
+
+# 🪟 OS-specifika filer
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# 🧪 Testresultat och profileringsdata
+coverage/
+*.coverage
+.cache/
+pytest_cache/
+htmlcov/
+
+# 🗜️ Exporter / genererade filer
+output/
+exports/
+reports/
+build/
+dist/
+
+# 🔒 Säkerhetskopior / känsliga filer
+*.key
+*.pem
+*.env
+.env/
+secrets/
+credentials.json
+token.json
